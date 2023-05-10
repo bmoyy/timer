@@ -7,7 +7,7 @@ const alarm = (args) => {
     if (isNaN(time)) continue;
     
     setTimeout(() => {
-      process.stdout.write('.');
+      process.stdout.write('\x07');
     },(time * 1000));
   }
 
